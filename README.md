@@ -45,6 +45,8 @@ npm install axios
 1. Відкрий **Settings → Pages**.
 2. У розділі **Source** обери **GitHub Actions**.
 
+![Налаштування GitHub Pages: Settings → Pages → Source → GitHub Actions](./assets/pages-github-actions.jpg)
+
 Далі щоразу, коли ти пушиш у гілку `main`, GitHub автоматично збирає проєкт і
 оновлює живу сторінку. Посилання на неї — там само, у **Settings → Pages**.
 
