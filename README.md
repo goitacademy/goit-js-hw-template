@@ -6,9 +6,17 @@
 
 ## 1. Створи репозиторій зі шаблону
 
-1. Натисни зелену кнопку **Use this template → Create a new repository**.
-2. Назви репозиторій за номером завдання: `goit-js-hw-09`, `goit-js-hw-10` і так
-   далі до `goit-js-hw-12`.
+Натисни зелену кнопку **Use this template** і обери опцію
+**Create a new repository**.
+
+![Створення репозиторію за шаблоном, крок 1](./assets/template-step-1.jpg)
+
+Відкриється сторінка нового репозиторію. Назви його за номером завдання
+(`goit-js-hw-09`, `goit-js-hw-10` і так далі до `goit-js-hw-12`), переконайся, що
+репозиторій **публічний** (Public), і натисни **Create repository from
+template**.
+
+![Створення репозиторію за шаблоном, крок 2](./assets/template-step-2.png)
 
 ## 2. Увімкни живу сторінку (GitHub Pages)
 
