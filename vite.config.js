@@ -1,6 +1,11 @@
 import { defineConfig } from 'vite';
 import { glob } from 'glob';
 import SortCss from 'postcss-sort-media-queries';
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
+
+const projectRoot = fileURLToPath(new URL('.', import.meta.url));
+const sourceRoot = resolve(projectRoot, 'src');
 
 export default defineConfig(({ command }) => {
   return {
@@ -12,12 +17,12 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src',
+    root: sourceRoot,
     build: {
       sourcemap: true,
       rollupOptions: {
         // підхоплює будь-який src/*.html — мультисторінковість «безкоштовно»
-        input: glob.sync('./src/*.html'),
+        input: glob.sync('*.html', { cwd: sourceRoot, absolute: true }),
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
